@@ -1,10 +1,10 @@
 def calculadora():
-    print("=== Calculadora de Suma y Resta ===")
+    print("=== Calculadora de Suma, Resta, Multiplicación, División y Potencia ===")
     
     while True:
         try:
             num1 = float(input("Ingresa el primer número: "))
-            operacion = input("¿Qué operación deseas? (+, -): ")
+            operacion = input("¿Qué operación deseas? (+, -, *, /, **): ")
             num2 = float(input("Ingresa el segundo número: "))
             
             if operacion == "+":
@@ -22,6 +22,9 @@ def calculadora():
                     print(f"Resultado: {num1} / {num2} = {resultado}\n")
                 else:
                     print("Error: División por cero no permitida.\n")
+            elif operacion == "**":
+                resultado = num1 ** num2
+                print(f"Resultado: {num1} ** {num2} = {resultado}\n")
             else:
                 print("Operación no válida. Intenta de nuevo.\n")
                 continue
