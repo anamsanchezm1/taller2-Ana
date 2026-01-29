@@ -13,6 +13,15 @@ def calculadora():
             elif operacion == "-":
                 resultado = num1 - num2
                 print(f"Resultado: {num1} - {num2} = {resultado}\n")
+            elif operacion == "*":
+                resultado = num1 * num2
+                print(f"Resultado: {num1} * {num2} = {resultado}\n")
+            elif operacion == "/":
+                if num2 != 0:
+                    resultado = num1 / num2
+                    print(f"Resultado: {num1} / {num2} = {resultado}\n")
+                else:
+                    print("Error: División por cero no permitida.\n")
             else:
                 print("Operación no válida. Intenta de nuevo.\n")
                 continue
